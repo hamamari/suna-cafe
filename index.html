@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUNA CAFE</title>
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- 自分のCSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,22 +21,26 @@
         </div>
 
         <nav class="nav">
-            <a href="#">HOME</a>
-            <a href="#">MENU</a>
-            <a href="#">ABOUT</a>
-            <a href="#">ACCESS</a>
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#menu">MENU</a>
+            <a href="#access">ACCESS</a>
         </nav>
 
         <div class="sns">
-            <a href="#">Instagram</a>
-            <a href="#">X</a>
-        </div>
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
 
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+        </div>
     </header>
 
     <main>
 
-        <section class="hero">
+        <section id="home" class="hero  fade-up">
 
             <div class="hero-content">
 
@@ -50,7 +59,7 @@
 
         </section>
 
-        <section class="about">
+        <section id="about" class="about fade-up">
 
             <p class="section-label">
                 ABOUT SUNA CAFE
@@ -69,20 +78,20 @@
 
             <div class="about-grid">
 
-                <div class="about-card">
-                    <h3></h3>
+                <div class="about-card  fade-up">
+                    <img class="about-icon1" src="images/drip.png" alt="">
                     <h4>オリジナルブレンド</h4>
                     <p>オーナーこだわりの<br>オリジナルブレンドコーヒーを<br>一杯ずつ丁寧にドリップ。</p>
                 </div>
 
-                <div class="about-card">
-                    <h3></h3>
+                <div class="about-card  fade-up">
+                    <img class="about-icon2" src="images/room.png" alt="">
                     <h4>くつろぎの空間</h4>
                     <p>白タイルとブロックガラスが<br>昭和モダンな店内で、<br>ゆっくりとした時間を</p>
                 </div>
 
-                <div class="about-card">
-                    <h3></h3>
+                <div class="about-card  fade-up">
+                    <img class="about-icon3" src="images/people.png" alt="">
                     <h4>常連さんに愛されて</h4>
                     <p>お客様に合わせてカップをセレクト。<br>すてきなご夫婦に会いたくなる<br>どなたにも心地よい場所。</p>
                 </div>
@@ -91,7 +100,7 @@
 
         </section>
 
-        <section class="menu">
+        <section id="menu" class="menu fade-up">
 
             <p class="section-label">
                 MENU
@@ -101,41 +110,41 @@
 
             <div class="menu-grid">
 
-                <div class="menu-card">
+                <div class="menu-card  fade-up">
                     <img src="images/menu-napolitan.jpg" alt="ナポリタン">
                     <h3>ナポリタン</h3>
                     <p>昔ながらの喫茶店の味。<br>ケチャップのやさしい味わい。</p>
                 </div>
 
-                <div class="menu-card">
+                <div class="menu-card  fade-up">
                     <img src="images/menu-sandwich.jpg" alt="サンドイッチ">
                     <h3>サンドイッチ</h3>
                     <p>ふんわりパンに、たっぷり具材。<br>ボリューム満点の人気メニュー。</p>
                 </div>
 
-                <div class="menu-card">
+                <div class="menu-card  fade-up">
                     <img src="images/menu-pudding.jpg" alt="プリンアラモード">
                     <h3>プリンアラモード</h3>
                     <p>固めのプリンとフルーツたっぷり。<br>懐かしくて贅沢な一品。</p>
                 </div>
 
-                <div class="menu-card">
+                <div class="menu-card  fade-up">
                     <img src="images/menu-cream-soda.jpg" alt="クリームソーダ">
                     <h3>クリームソーダ</h3>
                     <p>シュワっと爽やか。<br>喫茶店の定番ドリンク。</p>
                 </div>
 
             </div>
-            <a href="#" class="menu-btn">
+            <a href="#" class="menu-btn  fade-up">
                 <span>すべてのメニューを見る</span>
                 <span class="arrow">→</span>
             </a>
 
         </section>
 
-        <section class="coffee">
+        <section class="coffee fade-up">
 
-            <div class="coffee-image">
+            <div class="coffee-image  fade-up">
 
                 <img
                 src="images/coffee-drip.jpg"
@@ -143,9 +152,9 @@
 
             </div>
 
-            <div class="coffee-content">
+            <div class="coffee-content  fade-up">
 
-                <p class="section-label">
+                <p class="section-label  fade-up">
                     SPECIAL DRIP COFFEE
                 </p>
 
@@ -169,17 +178,17 @@
             </div>
 
         </section>
-        <section class="access">
+        <section id="access" class="access fade-up">
 
-            <p class="section-label">
+            <p class="section-label  fade-up">
                 ACCESS
             </p>
 
             <h2>アクセス・営業時間</h2>
 
-            <div class="access-wrapper">
+            <div class="access-wrapper  fade-up">
 
-                <div class="access-info">
+                <div class="access-info  fade-up">
 
                     <p>
                         〒760-0000<br>
@@ -196,10 +205,10 @@
                         水曜日
                     </p>
 
-            <a href="#" class="map-btn">
-                <span>Googleマップを見る</span>
-                <span class="arrow">→</span>
-            </a>
+                    <a href="https://maps.app.goo.gl/yfeiyyBVDe5EZpBh8" target="_blank" class="map-btn">
+                        <span>Googleマップを見る</span>
+                        <span class="arrow">→</span>
+                    </a>
 
                 </div>
 
@@ -219,14 +228,50 @@
         </div>
 
         <div class="footer-sns">
-            <a href="#">Instagram</a>
-            <a href="#">X</a>
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
         </div>
 
-        <p>
+        <p class="copyright">
             © SUNA CAFE
         </p>
 
     </footer>
+    <a href="#home" class="back-to-top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+    <script>
+        const targets = document.querySelectorAll('.fade-up');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    entry.target.classList.add('show');
+                }
+            });
+        });
+
+        targets.forEach(target => {
+            observer.observe(target);
+        });
+    </script>
+    <script>
+        const backToTop = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+
+            if(window.scrollY > 300){
+                backToTop.classList.add('show');
+            }else{
+                backToTop.classList.remove('show');
+            }
+
+        });
+    </script>
 </body>
 </html>
