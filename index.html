@@ -27,6 +27,12 @@
             <a href="#access">ACCESS</a>
         </nav>
 
+        <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
         <div class="sns">
             <a href="#" target="_blank">
                 <i class="fa-brands fa-instagram"></i>
@@ -66,14 +72,14 @@
             </p>
 
             <h2>
-                ご夫婦で営む、<br>
+                ご夫婦で営む<span class="sp-hide"><br></span>
                 30年の老舗喫茶店
             </h2>
 
             <p class="about-text">
                 常連のお客様に支えられ、30年。<br>
                 変わらない味と、あたたかな空間で、<br>
-                今日もご夫婦が、ほっと一息をお届けします。
+                今日もご夫婦が<br>ほっと一息をお届けします。
             </p>
 
             <div class="about-grid">
@@ -272,6 +278,21 @@
             }
 
         });
+    </script>
+    <script>
+
+        const hamburger =
+        document.querySelector('.hamburger');
+
+        const nav =
+        document.querySelector('.nav');
+
+        hamburger.addEventListener('click', () => {
+
+            nav.classList.toggle('active');
+
+        });
+
     </script>
 </body>
 </html>
